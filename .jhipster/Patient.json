@@ -1,0 +1,45 @@
+{
+  "changelogDate": "20240124040755",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "50",
+      "fieldValidateRulesMinlength": "1"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "150",
+      "fieldValidateRulesMinlength": "1"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "mobileNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Patient",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

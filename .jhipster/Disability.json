@@ -1,0 +1,19 @@
+{
+  "changelogDate": "20240124041558",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "100",
+      "fieldValidateRulesMinlength": "1"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Disability",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

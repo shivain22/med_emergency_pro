@@ -1,0 +1,26 @@
+{
+  "changelogDate": "20240124050801",
+  "dto": "mapstruct",
+  "fields": [],
+  "jpaMetamodelFiltering": true,
+  "name": "PatientComorbidity",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "email",
+      "otherEntityName": "patient",
+      "relationshipName": "patient",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": ["required"]
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "comorbidity",
+      "relationshipName": "comorbidity",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": ["required"]
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,26 @@
+{
+  "changelogDate": "20240124051016",
+  "dto": "mapstruct",
+  "fields": [],
+  "jpaMetamodelFiltering": true,
+  "name": "PatientDisability",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "email",
+      "otherEntityName": "patient",
+      "relationshipName": "patient",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": ["required"]
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "disability",
+      "relationshipName": "disability",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": ["required"]
+    }
+  ],
+  "service": "serviceImpl"
+}
